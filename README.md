@@ -15,4 +15,4 @@ Ghi chép về ansible
 
 
 ### Tham khảo tài liệu
-[1]: https://serversforhackers.com/an-ansible-tutorial
+[1] https://serversforhackers.com/an-ansible-tutorial
