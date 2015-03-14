@@ -14,6 +14,14 @@ Ghi chép về ansible
 - Là provisioning tool 
 
 ### Cách cài đặt
+- Mô hình
+```sh
+                        |------Client1(Ubuntu 12.04)
+                        |
+SRV(Ubuntu14.04)--------|------Client2(Ubuntu 14.04)
+                        |
+                        |------Client3(CentOS 6.5)
+```
 - Môi trường
 ```python
 python test
