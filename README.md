@@ -3,15 +3,11 @@ Ghi chép về ansible
 
 
 ## Mục lục 
-[Lịch sử ghi chép](#lichsughichep)
-
-[Ghi chép](#ghichep)
-
-[Vai trò - chức năng](#vaitrochucnang)
-
-[Cách cài đặt](#cachcaidat)
-
-[Tham khảo tài liệu](#thamkhaotailieu)
+- [Lịch sử ghi chép](#lichsughichep)
+- [Ghi chép](#ghichep)
+- [Vai trò - chức năng](#vaitrochucnang)
+- [Cách cài đặt](#cachcaidat)
+- [Tham khảo tài liệu](#thamkhaotailieu)
 
 <a name="lichsughichep"></a>
 ### Lịch sử ghi chép
