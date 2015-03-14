@@ -15,7 +15,7 @@ Ghi chép về ansible
 
 ### Cách cài đặt
 - Môi trường
-```py
+```python
 python test
 Ubuntu 14.04-2 64bit
 ```
