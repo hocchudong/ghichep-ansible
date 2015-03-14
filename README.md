@@ -13,6 +13,26 @@ Ghi chép về ansible
 - Dùng để configuration management
 - Là provisioning tool 
 
+### Cách cài đặt
+- Môi trường
+```py
+python test
+Ubuntu 14.04-2 64bit
+```
+- Lệnh cài đặt
+```sh
+sudo apt-add-repository -y ppa:ansible/ansible
+sudo apt-get update
+sudo apt-get install -y ansible
+```
+
+- Phiên bản của Ansible hiện tại (14.03.2015)
+```sh
+root@u14:~# ansible --version
+ansible 1.8.4
+  configured module search path = None
+root@u14:~#
+```
 
 ### Tham khảo tài liệu
 [1] https://serversforhackers.com/an-ansible-tutorial
