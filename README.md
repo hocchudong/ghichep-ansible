@@ -3,16 +3,26 @@ Ghi chép về ansible
 
 
 ## Mục lục 
+[Lịch sử ghi chép](#lichsughichep)
+[Ghi chép](#ghichep)
+[Vai trò - chức năng](#vaitrochucnang)
+[Cách cài đặt](#cachcaidat)
+[Tham khảo tài liệu](#thamkhaotailieu)
 
+
+<a name="lichsughichep"></a>
 ### Lịch sử ghi chép
 - 14/03/2015: Tạo tài liệu | congto
 
+<a name="ghichep"></a>
 ### Ghi chép
 
+<a name="vaitrochucnang"></a>
 ### Vai trò - Chức năng
 - Dùng để configuration management
 - Là provisioning tool 
 
+<a name="cachcaidat"></a>
 ### Cách cài đặt
 - Mô hình
 ```sh
@@ -84,5 +94,6 @@ all : gọi tất cả các server được khai báo trong file hosts (ví dụ
 - Kết quả sẽ như sau:
 ![ansible-ping](images/ansible-ping.png)
 
+<a name="thamkhaotailieu"></a>
 ### Tham khảo tài liệu
 [1] https://serversforhackers.com/an-ansible-tutorial
