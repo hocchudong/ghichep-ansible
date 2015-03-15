@@ -65,33 +65,42 @@ cp /etc/ansible/hosts /etc/ansible/hosts.bka
 
 - Tạo file `/etc/ansible/hosts` mới với nội dung như sau
 ```sh
-[local]
-127.0.0.1
-
-[web]
 # IP cua 03 may client
-192.168.0.101
-192.168.0.102
-192.168.0.103
+
+[ubuntu]
+172.16.69.215
+172.16.69.248
+
+[centos]
+172.16.69.243
 ```
 
 - Thực hiện lện dưới để kiểm tra ping tới các máy Client bằng Ansible (nhớ phải cho phép ssh bằng root tới các client)
 ```sh
-ansible all -m  ping -s -k -u root
+ansible all -m  ping -k -u root
 ```
 
 - Giải thích tùy chọn lệnh
 ```sh
 all : gọi tất cả các server được khai báo trong file hosts (ví dụ này là 04 server, kể cả chính máy chủ cài Ansible Server)
 -m ping : sử dụng mô-đun ping trong Ansible để thực hiện lệnh ping.
--s : Sử dụng quyền sudo trên các client.
 -k : yêu cầu xác thực khi thực hiện các lệnh từ xa đối với Client.
--u root : đăng nhập và thực hiện lệnh `ping` ở trên bằng tài khoản `root` của Client.
-
+-u root : đăng nhập và thực hiện lệnh `ping` ở trên bằng tài khoản `root` của Client. Mặc định sử dụng quyền `root`
 ```
 
 - Kết quả sẽ như sau:
 ![ansible-ping](images/ansible-ping.png)
+
+Ví dụ kiểm tra phiên bản của các máy Client
+
+Ví dụ cài Apache trên các máy là Ubuntu
+```sh
+# Lưu ý tùy chọn `all` thay bằng `ubuntu`, được định nghĩa trong file hosts.
+
+ansible ubuntu -m shell -a 'sudo apt-get install apache2 -y' -k
+SSH password:
+```
+
 
 <a name="thamkhaotailieu"></a>
 ### Tham khảo tài liệu
