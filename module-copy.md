@@ -3,5 +3,5 @@
 
 - Cách dùng
 ```sh
--m -a 'src=duong_dan_file_tren_server dest=duong_dan_tuyet_doi_may_o_xa'
+-m copy -a 'src=duong_dan_file_tren_server dest=duong_dan_tuyet_doi_may_o_xa'
 ```
