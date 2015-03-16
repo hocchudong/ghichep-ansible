@@ -8,3 +8,5 @@
 ```
 
 - Dùng trong playbook
+
+# Tình huống sử dụng
