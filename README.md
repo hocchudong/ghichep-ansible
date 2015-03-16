@@ -7,7 +7,9 @@ Ghi chép về ansible
 - [Ghi chép](#ghichep)
 - [Vai trò - chức năng](#vaitrochucnang)
 - [Cách cài đặt](#cachcaidat)
+- [Các module hay dùng](#cacmodulehaydung)
 - [Tham khảo tài liệu](#thamkhaotailieu)
+
 
 <a name="lichsughichep"></a>
 ### Lịch sử ghi chép
@@ -100,6 +102,9 @@ Ví dụ cài Apache trên các máy là Ubuntu
 ansible ubuntu -m shell -a 'sudo apt-get install apache2 -y' -k
 SSH password:
 ```
+
+<a name="cacmodulehaydung"></a>
+### Các module hay dùng
 
 
 <a name="thamkhaotailieu"></a>
