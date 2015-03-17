@@ -14,5 +14,9 @@ ansible all -m setup -a 'filter=ansible_all_ipv4_addresses'
 
 ```
 
+Minh họa:
+![ansible-setup2](images/ansible-setup2.png)
+
+
 - Dùng với playbook
 
