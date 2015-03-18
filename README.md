@@ -109,6 +109,8 @@ SSH password:
 
 <a name="thamkhaotailieu"></a>
 ### Tham khảo tài liệu
-[1] https://serversforhackers.com/an-ansible-tutorial
-[2] https://github.com/hocchudong/ghichep-ansible
-[3] https://github.com/d0m0reg00dthing/ansible
+- [1] https://serversforhackers.com/an-ansible-tutorial
+
+- [2] https://github.com/hocchudong/ghichep-ansible
+
+- [3] https://github.com/d0m0reg00dthing/ansible
