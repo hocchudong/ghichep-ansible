@@ -11,8 +11,7 @@ ansible-playbook file_yaml.yml
 
 ### Các ghi chú
 - Sử dụng Playbook với file host cụ thể, sử dụng tùy chọn `-i`
-```sh
-ansible-playbook  -i  duongdan/file_host  duongdan/file_yaml.yml
+
 ```
 - Minh họa
 ![ansible-ping](images/ansible-playbook1.png)
