@@ -17,6 +17,7 @@ ansible-playbook file_yaml.yml
 ![ansible-ping](images/ansible-playbook1.png)
 
 Sử dụng dụng tùy chọn `--list-hosts` trong `playbook` để kiểm tra các host được áp dụng.
+```
 - Minh họa
 ![ansible-ping](images/ansible-playbook2.png)
 
