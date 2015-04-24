@@ -12,12 +12,11 @@ ansible-playbook file_yaml.yml
 ### Các ghi chú
 - Sử dụng Playbook với file host cụ thể, sử dụng tùy chọn `-i`
 
-```
+
 - Minh họa
 ![ansible-ping](images/ansible-playbook1.png)
 
 Sử dụng dụng tùy chọn `--list-hosts` trong `playbook` để kiểm tra các host được áp dụng.
-```
 - Minh họa
 ![ansible-ping](images/ansible-playbook2.png)
 
