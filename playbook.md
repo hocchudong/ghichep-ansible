@@ -26,7 +26,7 @@ Sử dụng dụng tùy chọn `--list-task` trong `playbook` để kiểm tra t
 - Minh họa
 ![ansible-ping](images/ansible-playbook3.png)
 
-- Sử dụng tùy chọn --step để thực hiện từng task sau khi người dùng nhập vào
+Sử dụng tùy chọn --step để thực hiện từng task sau khi người dùng nhập vào
 ```
  ansible-playbook -i /root/ansible-vd1/hosts  /root/ansible-vd1/installhttp.yml --step
 ```
