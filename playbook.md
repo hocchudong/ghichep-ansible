@@ -30,6 +30,7 @@ Sử dụng dụng tùy chọn `--list-task` trong `playbook` để kiểm tra t
 ```
  ansible-playbook -i /root/ansible-vd1/hosts  /root/ansible-vd1/installhttp.yml --step
 ```
-Minh họa:
+
+- Minh họa:
 ![ansible-ping](images/ansible-playbook3.png)
 
