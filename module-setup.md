@@ -44,7 +44,7 @@ Minh họa:
 - Có thể sử dụng tùy chọn * kèm trong filter. Lệnh dưới sẽ lọc các thông tin về card bắt đầu là eth
 ```sh
 ansible all -m setup -a 'filter=ansible_eth*'
-``
+```
 Minh họa:
 ![ansible-setup5](images/ansible-setup5.png)
 #### Dùng với playbook
