@@ -91,9 +91,15 @@ all : gọi tất cả các server được khai báo trong file hosts (ví dụ
 ```
 
 - Kết quả sẽ như sau:
+
 ![ansible-ping](images/ansible-ping.png)
 
+
 Ví dụ kiểm tra phiên bản của các máy Client
+```sh
+ansible all  -m setup -a 'filter=ansible_distribution' -k
+```
+
 
 Ví dụ cài Apache trên các máy là Ubuntu
 ```sh
