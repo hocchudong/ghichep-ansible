@@ -99,7 +99,7 @@ Ví dụ kiểm tra phiên bản của các máy Client
 ```sh
 ansible all  -m setup -a 'filter=ansible_distribution' -k
 ```
-
+![ansible-version-os.png](images/ansible-version-os.png)
 
 Ví dụ cài Apache trên các máy là Ubuntu
 ```sh
