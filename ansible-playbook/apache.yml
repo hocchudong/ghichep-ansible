@@ -1,0 +1,8 @@
+---
+- hosts: webserver
+  remote_user: uvdc
+  tasks:
+   - name: Installs apache web server
+     apt: name=apache2 state=latest update_cache=true
+     become: yes
+     become_method: sudo 
