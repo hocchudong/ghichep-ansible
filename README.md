@@ -120,3 +120,10 @@ SSH password:
 - [2] https://github.com/hocchudong/ghichep-ansible
 
 - [3] https://github.com/d0m0reg00dthing/ansible
+
+**Cập nhật thêm các mục sau:**
+
+- Các thuật ngữ trong Ansible.
+- Tổng quan , những kiến thức cần có để bắt đầu với Ansible.
+- Cập nhật về cách sử dụng về Module SQL (cụ thể là MySQL)
+- Project.
