@@ -12,7 +12,7 @@ Một số chú ý về ansible mà bản thân tác giả (cosy294) đã rút r
 - Đối với Notepad++, bạn cần chuyển đổi `TABs to spaces` để có thể dễ dàng chỉnh sửa file yaml với phím TAB. Nếu không, thì không nên sử dụng phím TAB để trong yaml.
 
   Để thực hiện, vào `Settings -> Preferences -> Language Menu/Tab Settings`, rồi chọn như hình dưới đây.
-  ![](http://i.imgur.com/aNrTJs1.png)
+  ![](http://image.prntscr.com/image/07c4214382a9448ab6a00ac265b55464.png)
 
 - Để check cú pháp YAML, mình có 2 cách sau đây:
   - 1. Rất đơn giản, truy cập trang web http://www.yamllint.com/, post đoạn yaml cần check và nhấn `GO`. Trang web sẽ trả về kết quả cho bạn.
