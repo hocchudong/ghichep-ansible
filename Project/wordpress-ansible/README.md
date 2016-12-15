@@ -52,7 +52,7 @@ mkdir wordpress
 cd wordpress
 ```
 
-- tạo 2 playbook [web.yml]() và [db.yml]()
+- tạo 2 playbook [web.yml](https://github.com/datkk06/ghichep-ansible/blob/master/Project/wordpress-ansible/web.yml) và [db.yml](https://github.com/datkk06/ghichep-ansible/blob/master/Project/wordpress-ansible/db.yml)
 
 - sau đó chạy 2 playbook :
 
@@ -63,9 +63,9 @@ ansible-playbook db.yml
 
 - Kết quả thu được :
 
-![scr1]()
-![scr2]()
+![scr1](http://i.imgur.com/E4XX1lU.png)
+![scr2](http://i.imgur.com/mlgO7Li.png)
 
 - Vào web server để kiểm tra :
 
-![scr3]()
+![scr3](http://i.imgur.com/rwcBQ31.png)
