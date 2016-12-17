@@ -1,0 +1,12 @@
+---
+- name: cai dat wp
+  host: webservers
+  user: root
+  roles:
+    - web
+
+- name: cai dat db
+  host: dbservers
+  user: root
+  roles:
+    - db
