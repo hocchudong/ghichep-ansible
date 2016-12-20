@@ -1,12 +1,12 @@
 ---
 - name: cai dat wp
-  host: webservers
+  hosts: webservers
   user: root
   roles:
     - web
 
 - name: cai dat db
-  host: dbservers
+  hosts: dbservers
   user: root
   roles:
     - db
