@@ -84,11 +84,12 @@ ssh-copy-id root@10.10.10.30
 - Tiếp theo đó chúng ta tạo thư mục group_vars và file all tai `/etc/ansible` :
 
 ```sh
+cd /etc/ansible
 mkdir group_vars
 cd group_vars
-echo "chua cac bien" >> all
-echo "host_server: 10.10.10.30" #sua lai thanh ip cua db server cua ban
-echo "host_client: 10.10.10.20" #sua lai thanh ip cua webservercua ban
+echo "#chua cac bien" >> all
+echo "host_server: 10.10.10.30" >> all #sua lai thanh ip cua db server cua ban
+echo "host_client: 10.10.10.20" >> all #sua lai thanh ip cua webservercua ban
 ```
 
 - tạo roles và các thư mục cũng như file bên trong :
@@ -103,6 +104,7 @@ cd roles
 Tại `/etc/ansible/roles` chúng ta cần tại 2 thư mục web và db :
 
 ```sh
+cd roles
 mkdir web
 mkdir db
 ```
