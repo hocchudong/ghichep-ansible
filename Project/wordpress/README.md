@@ -90,6 +90,7 @@ cd group_vars
 echo "#chua cac bien" >> all
 echo "host_server: 10.10.10.30" >> all #sua lai thanh ip cua db server cua ban
 echo "host_client: 10.10.10.20" >> all #sua lai thanh ip cua webservercua ban
+cd /etc/ansible
 ```
 
 - tạo roles và các thư mục cũng như file bên trong :
