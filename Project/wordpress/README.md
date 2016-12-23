@@ -68,15 +68,6 @@ sudo apt-get update
 sudo apt-get install -y ansible
 ```
 
-- Chúng ta thiết lập file hosts `/etc/ansible/hosts` như sau :
-
-```sh
-[Webserver]
-10.10.10.20
-[dbserver]
-10.10.10.30
-```
-
 - Sau đó tại server chúng ta tạo Key SSH :
 
 ```sh
@@ -89,25 +80,25 @@ ssh-keygen -t rsa -b 4096
 ssh-copy-id root@10.10.10.20
 ssh-copy-id root@10.10.10.30
 ```
-
-- Tiếp theo đó chúng ta tạo thư mục group_vars và file all :
+ 
+- Tiếp theo đó chúng ta tạo thư mục group_vars và file all tai `/etc/ansible` :
 
 ```sh
 mkdir group_vars
 cd group_vars
-vi all
+echo "chua cac bien" >> all
 ```
 
 - tạo roles và các thư mục cũng như file bên trong :
 
-Tạo thư mục roles:
+Tạo thư mục roles tai `/etc/ansible` :
 
 ```sh
 mkdir roles
 cd roles
 ```
 
-Tại đây chúng ta cần tại 2 thư mục web và db :
+Tại `/etc/ansible/roles` chúng ta cần tại 2 thư mục web và db :
 
 ```sh
 mkdir web
@@ -126,9 +117,9 @@ mkdir handlers
 mkdir tasks
 ```
 
-Cài đặt cấu hình cho web và db (handlers và tasks của web và db).
+##Cài đặt cấu hình cho web và db (handlers và tasks của web và db).
 
-Tạo task cho web :
+###Tạo task cho web :
 
 ```sh
 vi /etc/ansible/roles/web/tasks/main.yml
@@ -177,7 +168,7 @@ Sau đó coppy đoạn YAML sau :
   notify: RESTART APACHE2
 ```
 
-Tạo handlers cho web :
+###Tạo handlers cho web :
 
 ```sh
 vi /etc/ansible/roles/web/handlers/main.yml
@@ -192,7 +183,7 @@ Sau đó coppy đoạn YAML sau vào file :
   service: name=apache2 state=restarted
 ```
 
-Tạo tasks cho db :
+###Tạo tasks cho db :
 
 ```sh
 vi /etc/ansible/roles/db/tasks/main.yml
@@ -219,7 +210,7 @@ Sau đó coppy đoạn YAML sau vào file :
   notify: RESTART MYSQL Server
 ```
 
-Tạo handlers cho db :
+###Tạo handlers cho db :
 
 ```sh
 vi /etc/ansible/roles/db/handlers/main.yml
@@ -236,16 +227,10 @@ Sau đó coppy đoạn YAML sau vào file :
 - Chỉnh sửa file hosts :
 
 ```sh
-vi /etc/ansible/hosts
-```
-
-Sau đó chỉnh sửa đoạn code sau trong file :
-
-```sh
-[webservers]
-10.10.10.20
-[dbservers]
-10.10.10.30
+echo "[webservers]" >> /etc/ansible/hosts
+echo "10.10.10.20" >> /etc/ansible/hosts
+echo "[dbservers]" >> /etc/ansible/hosts
+echo "10.10.10.30" >> /etc/ansible/hosts
 ```
 
 - Thêm file wp.yml
