@@ -98,7 +98,6 @@ Tạo thư mục roles tai `/etc/ansible` :
 
 ```sh
 mkdir roles
-cd roles
 ```
 
 Tại `/etc/ansible/roles` chúng ta cần tại 2 thư mục web và db :
