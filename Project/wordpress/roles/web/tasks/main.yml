@@ -34,5 +34,5 @@
     - {'regexp': "define\\('DB_NAME', '(.)+'\\);", 'line': "define('DB_NAME', 'wordpress');"}
     - {'regexp': "define\\('DB_USER', '(.)+'\\);", 'line': "define('DB_USER', 'wordpress');"}
     - {'regexp': "define\\('DB_PASSWORD', '(.)+'\\);", 'line': "define('DB_PASSWORD', 'wordpress');"}
-    - {'regexp': "define\\('DB_HOST', '(.)+'\\);", 'line': "define('DB_HOST', '10.10.10.30');"}
+    - {'regexp': "define\\('DB_HOST', '(.)+'\\);", 'line': "define('DB_HOST', '{{host_server}}');"}
   notify: RESTART APACHE2

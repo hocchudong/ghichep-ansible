@@ -87,6 +87,8 @@ ssh-copy-id root@10.10.10.30
 mkdir group_vars
 cd group_vars
 echo "chua cac bien" >> all
+echo "host_server: 10.10.10.30" #sua lai thanh ip cua db server cua ban
+echo "host_client: 10.10.10.20" #sua lai thanh ip cua webservercua ban
 ```
 
 - tạo roles và các thư mục cũng như file bên trong :
@@ -164,7 +166,7 @@ Sau đó coppy đoạn YAML sau :
     - {'regexp': "define\\('DB_NAME', '(.)+'\\);", 'line': "define('DB_NAME', 'wordpress');"}
     - {'regexp': "define\\('DB_USER', '(.)+'\\);", 'line': "define('DB_USER', 'wordpress');"}
     - {'regexp': "define\\('DB_PASSWORD', '(.)+'\\);", 'line': "define('DB_PASSWORD', 'wordpress');"}
-    - {'regexp': "define\\('DB_HOST', '(.)+'\\);", 'line': "define('DB_HOST', '10.10.10.30');"}
+    - {'regexp': "define\\('DB_HOST', '(.)+'\\);", 'line': "define('DB_HOST', '{{host_server}}');"}
   notify: RESTART APACHE2
 ```
 
@@ -201,7 +203,7 @@ Sau đó coppy đoạn YAML sau vào file :
 - name: CREATE DATABASE WordPress
   mysql_db: name=wordpress
 - name: CREATE USER FOR DATABASE WordPress
-  mysql_user: name=wordpress password=wordpress priv=wordpress.*:ALL host=10.10.10.20
+  mysql_user: name=wordpress password=wordpress priv=wordpress.*:ALL host={{host_client}}
 - name: CONFIG MYSQL For Remote DB
   lineinfile:
     dest=/etc/mysql/my.cnf

@@ -7,7 +7,7 @@
 - name: CREATE DATABASE WordPress
   mysql_db: name=wordpress
 - name: CREATE USER FOR DATABASE WordPress
-  mysql_user: name=wordpress password=wordpress priv=wordpress.*:ALL host=10.10.10.20
+  mysql_user: name=wordpress password=wordpress priv=wordpress.*:ALL host={{host_client}}
 - name: CONFIG MYSQL For Remote DB
   lineinfile:
     dest=/etc/mysql/my.cnf
