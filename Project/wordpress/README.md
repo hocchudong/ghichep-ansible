@@ -262,6 +262,7 @@ Sau đó coppy đoạn YAMl sau vào file :
 - Bây giờ chúng ta thực hiện chạy file playbook wp.yml rồi đi pha 1 ly cafe ngồi đợi thôi .
 
 ```sh
+cd /etc/ansible
 ansible-playbook wp.yml
 ```
 
